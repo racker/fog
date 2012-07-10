@@ -1,0 +1,4 @@
+1.4.0-rax
+
+* Remove multi_json dependency and use JSON module instead
+* Update Rakefile and remove all the validation steps
