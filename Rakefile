@@ -188,7 +188,6 @@ task :changelog do
   changelog << ('=' * changelog[0].length)
   changelog << ''
 
-  require 'multi_json'
   github_repo_data = Fog::JSON.decode(Excon.get('http://github.com/api/v2/json/repos/show/fog/fog').body)
   data = github_repo_data['repository'].reject {|key, value| !['forks', 'open_issues', 'watchers'].include?(key)}
   github_collaborator_data = Fog::JSON.decode(Excon.get('http://github.com/api/v2/json/repos/show/fog/fog/collaborators').body)
