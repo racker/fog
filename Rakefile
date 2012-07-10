@@ -151,18 +151,6 @@ task :build => :gemspec do
 end
 
 task :gemspec => :validate do
-  # read spec file and split out manifest section
-  spec = File.read(gemspec_file)
-
-  # replace name version and date
-  replace_header(spec, :name)
-  replace_header(spec, :version)
-  replace_header(spec, :date)
-  #comment this out if your rubyforge_project has a different name
-  replace_header(spec, :rubyforge_project)
-
-  File.open(gemspec_file, 'w') { |io| io.write(spec) }
-  puts "Updated #{gemspec_file}"
 end
 
 task :validate do
