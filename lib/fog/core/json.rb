@@ -1,3 +1,5 @@
+require 'json'
+
 module Fog
   module JSON
 
