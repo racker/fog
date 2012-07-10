@@ -135,10 +135,6 @@ end
 #############################################################################
 
 task :release => :build do
-  unless `git branch` =~ /^\* master$/
-    puts "You must be on the master branch to release!"
-    exit!
-  end
   sh "gem install pkg/#{name}-#{version}.gem"
   sh "git commit --allow-empty -a -m 'Release #{version}'"
   sh "git tag v#{version}"
