@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.name              = 'rackspace-fog'
   s.version           = '1.4.0'
   s.date              = '2012-06-24'
-  s.rubyforge_project = 'fog'
+  s.rubyforge_project = 'rackspace-fog'
 
   ## Make sure your summary is short. The description may be as long
   ## as you like.
@@ -31,7 +31,7 @@ Gem::Specification.new do |s|
   s.require_paths = %w[lib]
 
   ## If your gem includes any executables, list them here.
-  s.executables = ["fog"]
+  s.executables = ["rackspace-fog"]
 
   ## Specify any RDoc options here. You'll want to add your README and
   ## LICENSE files to the extra_rdoc_files list.

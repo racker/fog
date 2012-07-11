@@ -1,7 +1,7 @@
 require 'rubygems'
 require 'bundler/setup'
 require 'date'
-require File.dirname(__FILE__) + '/lib/fog'
+require File.dirname(__FILE__) + '/lib/rackspace-fog'
 
 #############################################################################
 #
@@ -14,7 +14,7 @@ def name
 end
 
 def version
-  line = File.read("lib/fog.rb")[/^\s*VERSION\s*=\s*.*/]
+  line = File.read("lib/rackspace-fog.rb")[/^\s*VERSION\s*=\s*.*/]
   line.match(/.*VERSION\s*=\s*['"](.*)['"]/)[1]
 end
 
