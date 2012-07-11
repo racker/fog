@@ -18,9 +18,6 @@ module Fog
       end
     end
 
-    # Do the MultiJson introspection at this level so we can define our encode/decode methods and perform
-    # the introspection only once rather than once per call.
-
     def self.encode(obj)
       JSON.generate(obj)
     end
