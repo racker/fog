@@ -19,11 +19,11 @@ module Fog
     end
 
     def self.encode(obj)
-      JSON.generate(obj)
+      ::JSON.generate(obj)
     end
 
     def self.decode(obj)
-      JSON.parse(obj)
+      ::JSON.parse(obj)
     end
 
   end
